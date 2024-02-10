@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charsetUTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1>Billing</h1>
+    <table id="billing-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <form id="customer-form">
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" required>
+        <label for="product-id">Product ID:</label>
+        <input type="text" id="product-id" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1" required>
+        <button type="button" id="add-product">Add Product</button>
+        <button type="button" id="calculate-total">Calculate Total</button>
+    </form>
+    <h2>Total: <span id="total">0</span></h2>
+    <script src="scipt.js"></script>
+</body>
+</html>
